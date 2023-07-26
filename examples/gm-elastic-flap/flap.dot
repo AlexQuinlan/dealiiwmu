@@ -1,0 +1,54 @@
+
+digraph structs{
+
+	node [shape=record];
+	rankdir = "LR"
+	
+
+
+
+
+
+
+
+	main [label=" {main() | {using namespace | input/output files | initialize MPI | <c1> construct elastic3D |
+              <rm1> elastic3D.run_mesh() | <r1> elastic3D.run() | PROGRAM END }}"]
+
+	run_mesh [label="{run_mesh() | { read_domain() | output_mesh()  }} " ]
+	
+	run [label= "{run() | {<ss1> setup_system() | <as1> assemble_system() | <s1> solve() | <or1> output_results()}} " ]
+
+	setup [label = "{setup_system() | {distribute dofs | setup_quadrature_point_history() |
+                         sparsity_pattern(args) | {local dof reinit |{system_matrix |  system_rhs}} | reinit inc._disp. |
+			 constraints.clear() | <n1> nodal_bcs() }}"]
+
+	nbc [label="{nodal_bcs() |{ {create | {vector of BC pts | vector of tuples: (DOF,Mag) | vector for BC removal}} | 
+	    read file into vectors | set affected radius | {loop | {cells|vertices|BC points|BC mags} | {unpack tuple (DOF,Mag) | 
+	    contraints.add_line | {if non-zero | constraints.set_inhomogeneity } | add BC for removal | 
+	    {remove BC | {bcpoints | bcmags}  } | clear removal list }   } | constraints.close()  }} " ]
+
+	assemble [label = "{assemble_system() | {system_rhs=0 | system_matrix=0 | {inst. |{ fe_values | cell_matrix | cell_rhs 
+		 	    | local_dof_indiced | body_force | body_force_values | lambda_values| mu_values | lambda| mu|
+			    rhs_values | pltd_rhs | ptld_idx | load1 | matchver | z_component | boundary_values}} | 
+		 	    {Loop | <cloop1> cells in dof_handler  } | {compress, vector add |{system_matrix|system_rhs}} }} }} " ]
+
+        celoop1 [label = "{cell loop | { check locally owned | cell_matrix=0 | cell_rhs=0 | fe_values.reinit(cell) |
+		{loop | {i|j|q} | {get_strain() | cell_matrix(i,j)} } | local_quadrature_points_data | body_force |
+		{loop | {i|q} | old_stress | cell_rhs} | get_dof_indices | constraints.dist._local_to_global |
+		{compress, vector add |{system_matrix|system_rhs}} }}"]			    
+
+	solve [label = "{solve() | {dist._incr._disp | solver_control | Solver cg | preconditioner(system_matrix) | cg.solve | 
+	      	     incremental_displacement }} "]
+
+
+	results [label = "{output_results() | {}}  "]
+
+	main:rm1 -> run_mesh
+	main:r1 -> run
+	run:ss1 -> setup
+	setup:n1 -> nbc
+	run:as1 -> assemble
+	assemble:cloop1 -> celoop1
+	run:s1 -> solve
+	run:or1 -> results
+}                  

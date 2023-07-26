@@ -1,0 +1,12 @@
+LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libmkl_core.so:/usr/lib/x86_64-linux-gnu/libmkl_intel_thread.so
+
+export LD_LIBRARY_PATH=/home/quinlan/.local/bin/lib:$LD_LIBRARY_PATH
+
+
+cmake -DDEAL_II_DIR=/home/quinlan/local/dealii/debug/complex . -G"Eclipse CDT4 - Unix Makefiles"
+
+
+
+cmake -DDEAL_II_DIR=/home/quinlan/local/dealii/debug/petsc . -G"Eclipse CDT4 - Unix Makefiles"
+export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libmkl_core.so:/usr/lib/x86_64-linux-gnu/libmkl_intel_thread.so
+export LD_LIBRARY_PATH=/home/quinlan/.local/bin/lib:$LD_LIBRARY_PATH                                       

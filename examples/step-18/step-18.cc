@@ -205,7 +205,7 @@ namespace Step18
            fe_values.shape_grad_component(shape_func, q_point, j)[i]) /
           2;
 
-    return tmp;
+    return tmp;  // temp is the 6 strain values [true or engineering strain?] AQ
   }
 
 
@@ -694,7 +694,7 @@ namespace Step18
   template <int dim>
   TopLevel<dim>::TopLevel()
     : triangulation(MPI_COMM_WORLD)
-    , fe(FE_Q<dim>(1), dim)
+    , fe(FE_Q<dim>(1),  dim)
     , dof_handler(triangulation)
     , quadrature_formula(fe.degree + 1)
     , present_time(0.0)
@@ -1198,6 +1198,13 @@ namespace Step18
     // accidentally visible beyond the end of the block in which they are
     // used:
     Vector<double> norm_of_stress(triangulation.n_active_cells());
+    Vector<double> s00(triangulation.n_active_cells()); // AQ added these
+    Vector<double> s01(triangulation.n_active_cells());
+    Vector<double> s10(triangulation.n_active_cells());
+    Vector<double> s11(triangulation.n_active_cells());
+    Vector<double> s20(triangulation.n_active_cells());
+    Vector<double> s21(triangulation.n_active_cells());
+
     {
       // Loop over all the cells...
       for (auto &cell : triangulation.active_cell_iterators())
@@ -1214,6 +1221,17 @@ namespace Step18
             // ...then write the norm of the average to their destination:
             norm_of_stress(cell->active_cell_index()) =
               (accumulated_stress / quadrature_formula.size()).norm();
+            // AQ added these other stress terms
+            s01(cell->active_cell_index()) =
+									  (accumulated_stress[0][1] );
+			s10(cell->active_cell_index()) =
+									  (accumulated_stress[1][0] );
+			s11(cell->active_cell_index()) =
+									  (accumulated_stress[1][1] );
+			s20(cell->active_cell_index()) =
+									  (accumulated_stress[2][0] );
+			s21(cell->active_cell_index()) =
+									  (accumulated_stress[2][1] );
           }
         // And on the cells that we are not interested in, set the respective
         // value in the vector to a bogus value (norms must be positive, and a
@@ -1226,6 +1244,13 @@ namespace Step18
     }
     // Finally attach this vector as well to be treated for output:
     data_out.add_data_vector(norm_of_stress, "norm_of_stress");
+    // extra stress terms added by AQ
+    data_out.add_data_vector(s00, "S00");
+	data_out.add_data_vector(s01, "S01");
+	data_out.add_data_vector(s10, "S10");
+	data_out.add_data_vector(s11, "S11");
+	data_out.add_data_vector(s20, "S20");
+	data_out.add_data_vector(s21, "S21");
 
     // As a last piece of data, let us also add the partitioning of the domain
     // into subdomains associated with the processors if this is a parallel

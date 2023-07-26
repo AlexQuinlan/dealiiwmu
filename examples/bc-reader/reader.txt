@@ -1,0 +1,45 @@
+
+
+
+Goals
+
+
+define a point based on x,y,z coordinates
+define dofs
+define magnitudes
+
+loop over cells
+loop over cell vertices
+check if vertex is sufficiently close to a BC point
+look-up relevant dofs
+look-up magnitudes
+Apply constraint to each specified DOF
+continue looping
+
+
+
+user to supply node number? or coordinates?
+Pull coordinates from mesh based on node number, assuming '.inp' style mesh
+
+
+Investigate if there is a global array of vertices that can be accessed.  No, per Wolfgang
+Look at vector distance calculation.
+
+
+Read from general csv, but work for *.inp also.
+New function [can be called by abaqus reader]
+
+
+
+Efficiency considerations
+
+
+
+parse in vector of unapplied boundary conditions [node #, x, y, z, u1, u2, u3]
+or
+parse in 2 vectors.  One of points, one of magnitudes
+create empty vector of applied BCs
+
+Scan cells, vertices
+when found, apply BCs
+move BC from unapplied to applied vector

@@ -1,0 +1,10 @@
+[lmn1[i_sh][0]*lmn1[i_sh][0], lmn1[i_sh][1]*lmn1[i_sh][1], lmn1[i_sh][2]*lmn1[i_sh][2],lmn1[i_sh][0]*lmn1[i_sh][1], lmn1[i_sh][1]*lmn1[i_sh][2], lmn1[i_sh][2]*lmn1[i_sh][0]],
+[lmn2[i_sh][0]*lmn2[i_sh][0], lmn2[i_sh][1]*lmn2[i_sh][1], lmn2[i_sh][2]*lmn2[i_sh][2],lmn2[i_sh][0]*lmn2[i_sh][1], lmn2[i_sh][1]*lmn2[i_sh][2], lmn2[i_sh][2]*lmn2[i_sh][0]],
+[corner_norms[i_sh][0]*corner_norms[i_sh][0], corner_norms[i_sh][1]*corner_norms[i_sh][1], corner_norms[i_sh][2]*corner_norms[i_sh][2],corner_norms[i_sh][0]*corner_norms[i_sh][1], corner_norms[i_sh][1]*corner_norms[i_sh][2], corner_norms[i_sh][2]*corner_norms[i_sh][0]],
+
+[2*lmn1[i_sh][0]*lmn2[i_sh][0], 2*lmn1[i_sh][1]*lmn2[i_sh][1], 2*lmn1[i_sh][2]*lmn2[i_sh][2],
+	lmn1[i_sh][0]*lmn2[i_sh][1]+lmn2[i_sh][0]*lmn1[i_sh][1],   lmn1[i_sh][1]*lmn2[i_sh][2]+lmn2[i_sh][1]*lmn1[i_sh][2],   lmn1[i_sh][2]*lmn2[i_sh][0]+lmn2[i_sh][2]*lmn1[i_sh][0]],
+[2*lmn2[i_sh][0]*corner_norms[i_sh][0], 2*lmn2[i_sh][1]*corner_norms[i_sh][1], 2*lmn2[i_sh][2]*corner_norms[i_sh][2],
+	lmn2[i_sh][0]*corner_norms[i_sh][1]+corner_norms[i_sh][0]*lmn2[i_sh][1],   lmn2[i_sh][1]*corner_norms[i_sh][2]+corner_norms[i_sh][1]*lmn2[i_sh][2],   lmn2[i_sh][2]*corner_norms[i_sh][0]+corner_norms[i_sh][2]*lmn2[i_sh][0]],
+[2*corner_norms[i_sh][0]*lmn1[i_sh][0], 2*corner_norms[i_sh][1]*lmn1[i_sh][1], 2*corner_norms[i_sh][2]*lmn1[i_sh][2],     corner_norms[i_sh][0]*lmn1[i_sh][1]+lmn1[i_sh][0]*corner_norms[i_sh][1],
+	corner_norms[i_sh][1]*lmn1[i_sh][2]+lmn1[i_sh][1]*corner_norms[i_sh][2],   corner_norms[i_sh][2]*lmn1[i_sh][0]+lmn1[i_sh][2]*corner_norms[i_sh][0]],    ]

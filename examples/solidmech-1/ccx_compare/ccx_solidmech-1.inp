@@ -1,0 +1,16 @@
+*include, input=/home/quinlan/Github/dealii/examples/solidmech-1/ccx_compare/Mesh.inp
+*Material, name=Material-1
+*Elastic, type=isotropic
+210e3, 0.25
+*SOLID SECTION, ELSET=Elall, MATERIAL=Material-1
+*Step
+*Static
+*Boundary
+1,  1, 3
+88, 1, 3
+16, 1, 3
+*Boundary
+120, 3, 3, 0.5
+*El File
+U
+*end step

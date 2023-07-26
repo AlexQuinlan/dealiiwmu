@@ -1,0 +1,10 @@
+/home/quinlan/Github/dealii/examples/cube-hex-stress/CMakeFiles/rebuild_cache.dir
+/home/quinlan/Github/dealii/examples/cube-hex-stress/CMakeFiles/info.dir
+/home/quinlan/Github/dealii/examples/cube-hex-stress/CMakeFiles/edit_cache.dir
+/home/quinlan/Github/dealii/examples/cube-hex-stress/CMakeFiles/strip_comments.dir
+/home/quinlan/Github/dealii/examples/cube-hex-stress/CMakeFiles/distclean.dir
+/home/quinlan/Github/dealii/examples/cube-hex-stress/CMakeFiles/runclean.dir
+/home/quinlan/Github/dealii/examples/cube-hex-stress/CMakeFiles/release.dir
+/home/quinlan/Github/dealii/examples/cube-hex-stress/CMakeFiles/run.dir
+/home/quinlan/Github/dealii/examples/cube-hex-stress/CMakeFiles/debug.dir
+/home/quinlan/Github/dealii/examples/cube-hex-stress/CMakeFiles/cube_hex_elast.dir

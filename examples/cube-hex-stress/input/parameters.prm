@@ -1,0 +1,36 @@
+# Using SI Units
+# --------------
+
+subsection Test Int Parameters
+
+  set Testing Integer = 99
+
+end
+
+subsection Test String parameters
+
+  set Little Message = solll
+
+end
+
+subsection Material Properties
+
+  set mu = 84e9
+  set lambda = 84e9
+  set rho = 7e3
+# E
+# nu
+
+end
+
+subsection Input Files
+
+  set initial_mesh_filename = input/hexcube_125.inp
+  set nodalbc_filename = input/cube-bcs-min.csv
+  set output_filename = output/cube_hex_mesh.vtk
+
+end
+
+
+
+# radius around nodal points

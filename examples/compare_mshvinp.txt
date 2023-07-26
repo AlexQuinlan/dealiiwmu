@@ -1,0 +1,46 @@
+Both take the argument (std::istream &in)
+
+Common variables:
+  unsigned int n_vertices;                                                                            
+  unsigned int n_cells;                                                                               
+  unsigned int dummy;
+  std::map<int, int> vertex_indices;                                                                       
+
+
+gmsh:
+determine file format
+deals with physical entities
+
+
+ucd:
+read number of vertices and cells
+
+
+
+Node comparison:
+vertex_indicies
+vertices
+No obvious differences
+
+
+Element/Cell comparison:
+ both: cell_type, material_id,
+
+
+MSH assigned the material_id based on the tag entity map, where UCD assigns directly from the file
+
+
+UCD if 1. Dimension matches feature (i.e. 1D line, 2D quad, 3D hex)
+       2. Line in 2D or 3D space
+       3. Quad in 3D space
+
+for 3D hex:
+    check material_id is valid
+    in >> cells.back().vertices[GeometryInfo<dim>::ucd_to_deal[i]];
+
+
+MSH:
+	cell type is specified within the .msh file:
+	1=line, 2=tri, 3=quad, 4=tet, 5=hex
+	in >> cells.back().vertices[GeometryInfo<dim>::ucd_to_deal[i]];
+ 

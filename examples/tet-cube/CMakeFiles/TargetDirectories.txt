@@ -1,0 +1,9 @@
+/home/quinlan/Github/dealii/examples/tet-cube/CMakeFiles/rebuild_cache.dir
+/home/quinlan/Github/dealii/examples/tet-cube/CMakeFiles/info.dir
+/home/quinlan/Github/dealii/examples/tet-cube/CMakeFiles/edit_cache.dir
+/home/quinlan/Github/dealii/examples/tet-cube/CMakeFiles/strip_comments.dir
+/home/quinlan/Github/dealii/examples/tet-cube/CMakeFiles/distclean.dir
+/home/quinlan/Github/dealii/examples/tet-cube/CMakeFiles/runclean.dir
+/home/quinlan/Github/dealii/examples/tet-cube/CMakeFiles/debug.dir
+/home/quinlan/Github/dealii/examples/tet-cube/CMakeFiles/run.dir
+/home/quinlan/Github/dealii/examples/tet-cube/CMakeFiles/tet-cube.dir

@@ -1,0 +1,61 @@
+digraph {
+
+
+// classes
+  Adapter [shape=diamond ]
+  CoupledLaplaceProblem [shape=diamond ]
+  RightHandSide [shape=diamond ]
+  BoundaryValues [shape=diamond ]
+
+  main [shape= circle]
+
+  run
+  make_grid
+  setup_system
+  assemble_system
+  solve
+  output_results
+
+
+  main -> CoupledLaplaceProblem
+  main -> run
+  run -> make_grid
+  run -> setup_system
+  run -> while
+  while -> assemble_system
+  while -> solve
+  while -> output_results
+
+  CoupledLaplaceProblem -> Adapter
+  CoupledLaplaceProblem -> run
+  assemble_system -> RightHandSide
+  assemble_system -> BoundaryValues
+  
+
+}
+//////
+// main.  construct CoupledLaplaceProblem
+
+// main.  run       CoupledLaplaceProblemz
+//        make_grid()
+// 	follows step-4 make_grid except
+// 	adds specification of setting boundary faces
+//        setup_system()
+// 	similar to step-4 setup_system except
+// 	re-initializes the dofs with the old solution
+//        set precice_delta_t
+//        while precice coupling
+//               assemble_system()
+// 		similar to step-4, but saves previous step data for use in next step.
+// 		Also interpolates and applies boundary values
+//        	      solve()
+// 		identical to step-4
+//        output_results()
+// 	similar to step-4, but includes mapping and time_step
+
+
+// where is the adapter set up?
+// there is an Adapter class
+
+
+// there's also a parameter class

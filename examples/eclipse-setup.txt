@@ -1,0 +1,26 @@
+From Bangerth video 8.01
+(still needs some refinement)
+cmake with flags -G
+
+------------------
+
+// Right click Project Explorer
+// Import
+// Existing Code as Makefile Project 
+
+// Linux GCC
+// Browse for working dir
+
+// ----------------
+this one
+Right click Project Explorer
+Import
+Existing project into workspace
+
+
+
+Create Launch Configuration:
+C/C++ application : set to executable
+Environment Tab, Set:
+
+LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libmkl_core.so:/usr/lib/x86_64-linux-gnu/libmkl_intel_thread.so 

@@ -1,0 +1,9 @@
+/home/quinlan/Github/dealii/examples/bc-reader/CMakeFiles/rebuild_cache.dir
+/home/quinlan/Github/dealii/examples/bc-reader/CMakeFiles/info.dir
+/home/quinlan/Github/dealii/examples/bc-reader/CMakeFiles/edit_cache.dir
+/home/quinlan/Github/dealii/examples/bc-reader/CMakeFiles/strip_comments.dir
+/home/quinlan/Github/dealii/examples/bc-reader/CMakeFiles/runclean.dir
+/home/quinlan/Github/dealii/examples/bc-reader/CMakeFiles/debug.dir
+/home/quinlan/Github/dealii/examples/bc-reader/CMakeFiles/run.dir
+/home/quinlan/Github/dealii/examples/bc-reader/CMakeFiles/distclean.dir
+/home/quinlan/Github/dealii/examples/bc-reader/CMakeFiles/bc-reader.dir

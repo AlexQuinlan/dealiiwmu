@@ -1,0 +1,10 @@
+/home/quinlan/Github/dealii/examples/enrich/CMakeFiles/rebuild_cache.dir
+/home/quinlan/Github/dealii/examples/enrich/CMakeFiles/info.dir
+/home/quinlan/Github/dealii/examples/enrich/CMakeFiles/edit_cache.dir
+/home/quinlan/Github/dealii/examples/enrich/CMakeFiles/strip_comments.dir
+/home/quinlan/Github/dealii/examples/enrich/CMakeFiles/distclean.dir
+/home/quinlan/Github/dealii/examples/enrich/CMakeFiles/runclean.dir
+/home/quinlan/Github/dealii/examples/enrich/CMakeFiles/debug.dir
+/home/quinlan/Github/dealii/examples/enrich/CMakeFiles/run.dir
+/home/quinlan/Github/dealii/examples/enrich/CMakeFiles/release.dir
+/home/quinlan/Github/dealii/examples/enrich/CMakeFiles/enrich9.dir

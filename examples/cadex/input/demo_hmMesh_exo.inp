@@ -1,0 +1,8 @@
+FILE
+   geometry_file   'demo_hmMesh_exo.ex2'
+END
+
+// Block Name : demo_solid_Body_0
+BLOCK    1
+END
+

@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/quinlan/Github/dealii/examples/Laplace_coupled/fancy_boundary_condition.cc
+precice/SolverInterface.hpp
+-
+iostream
+-
+sstream
+-
+

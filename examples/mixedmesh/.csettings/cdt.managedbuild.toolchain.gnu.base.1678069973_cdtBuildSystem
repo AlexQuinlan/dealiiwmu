@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 5.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage2">
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<configuration buildProperties="" id="cdt.managedbuild.toolchain.gnu.base.1678069973" name="Default" optionalBuildProperties="" parent="org.eclipse.cdt.build.core.emptycfg">
+			<folderInfo id="cdt.managedbuild.toolchain.gnu.base.1678069973.1328190727" name="/" resourcePath="">
+				<toolChain id="cdt.managedbuild.toolchain.gnu.base.2081821069" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+					<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.GNU_ELF" id="cdt.managedbuild.target.gnu.platform.base.1490595256" name="Debug Platform" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+					<builder id="cdt.managedbuild.target.gnu.builder.base.309999186" managedBuildOn="false" name="Gnu Make Builder.Default" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+					<tool id="cdt.managedbuild.tool.gnu.archiver.base.1256382650" name="GCC Archiver" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+					<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.1220930158" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+						<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1614693756" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+					</tool>
+					<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.1117632729" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+						<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1501846898" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+					</tool>
+					<tool id="cdt.managedbuild.tool.gnu.c.linker.base.234305642" name="GCC C Linker" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+					<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1219568155" name="GCC C++ Linker" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+						<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.18542337" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+							<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+							<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+						</inputType>
+					</tool>
+					<tool id="cdt.managedbuild.tool.gnu.assembler.base.1125823350" name="GCC Assembler" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+						<inputType id="cdt.managedbuild.tool.gnu.assembler.input.592346944" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+					</tool>
+				</toolChain>
+			</folderInfo>
+		</configuration>
+	</storageModule>
+</cproject>

@@ -481,8 +481,8 @@ void Step4<dim>::output_results() const
 
   data_out.build_patches();
 
-  std::ofstream output(dim == 2 ? "solution-2d.vtk" : "solution-3d.vtk");
-  data_out.write_vtk(output);
+  std::ofstream output(dim == 2 ? "solution-2d.vtu" : "solution-3d.vtu");
+  data_out.write_vtu(output);
 }
 
 

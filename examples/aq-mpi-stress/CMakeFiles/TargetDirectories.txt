@@ -1,0 +1,10 @@
+/home/quinlan/Github/dealii/examples/aq-mpi-stress/CMakeFiles/rebuild_cache.dir
+/home/quinlan/Github/dealii/examples/aq-mpi-stress/CMakeFiles/info.dir
+/home/quinlan/Github/dealii/examples/aq-mpi-stress/CMakeFiles/edit_cache.dir
+/home/quinlan/Github/dealii/examples/aq-mpi-stress/CMakeFiles/strip_comments.dir
+/home/quinlan/Github/dealii/examples/aq-mpi-stress/CMakeFiles/distclean.dir
+/home/quinlan/Github/dealii/examples/aq-mpi-stress/CMakeFiles/runclean.dir
+/home/quinlan/Github/dealii/examples/aq-mpi-stress/CMakeFiles/release.dir
+/home/quinlan/Github/dealii/examples/aq-mpi-stress/CMakeFiles/run.dir
+/home/quinlan/Github/dealii/examples/aq-mpi-stress/CMakeFiles/debug.dir
+/home/quinlan/Github/dealii/examples/aq-mpi-stress/CMakeFiles/cube_tet_elast.dir

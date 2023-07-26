@@ -1,0 +1,10 @@
+/home/quinlan/Github/dealii/examples/cadex/CMakeFiles/rebuild_cache.dir
+/home/quinlan/Github/dealii/examples/cadex/CMakeFiles/info.dir
+/home/quinlan/Github/dealii/examples/cadex/CMakeFiles/edit_cache.dir
+/home/quinlan/Github/dealii/examples/cadex/CMakeFiles/strip_comments.dir
+/home/quinlan/Github/dealii/examples/cadex/CMakeFiles/distclean.dir
+/home/quinlan/Github/dealii/examples/cadex/CMakeFiles/runclean.dir
+/home/quinlan/Github/dealii/examples/cadex/CMakeFiles/debug.dir
+/home/quinlan/Github/dealii/examples/cadex/CMakeFiles/run.dir
+/home/quinlan/Github/dealii/examples/cadex/CMakeFiles/release.dir
+/home/quinlan/Github/dealii/examples/cadex/CMakeFiles/cadex.dir
